@@ -25,10 +25,11 @@ const Container = styled.div`
   border-radius: 20px;
   margin: 20px;
   transition: transform 0.3s ease;
+  padding: 50px;
   @media (max-width: 768px) {
-    max-width: 100vw;
+    max-width: 80vw;
     height: auto;
-    padding: 10px;
+    padding: 30px;
   }
 
   &:hover {

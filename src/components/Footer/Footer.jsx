@@ -62,7 +62,7 @@ export const Copyright = styled.div`
     background-color: #171717;
     font-size: 0.9rem;
     padding: 1rem;
-    width: 100%;
+    max-width: 100%;
     text-align: center;
 `
 

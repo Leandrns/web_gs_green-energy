@@ -21,6 +21,7 @@ const Secao2 = styled.div`
   gap: 40px; 
   padding: 60px;
   flex-wrap: wrap; 
+  font-family: "Outfit";
 
   @media (max-width: 1024px) {
     gap: 30px;
@@ -37,6 +38,7 @@ const Secao2 = styled.div`
 const Title = styled.h2`
   font-size: 1.8rem;
   margin-bottom: 10px;
+  font-family: "Outfit";
 
   @media (max-width: 768px) {
     font-size: 1.3rem;

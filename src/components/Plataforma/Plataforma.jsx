@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import VisaoGeral from "../VisaoGeral/VisaoGeral";
 import Funcionalidades from "../Funcionalidades/Funcionalidades";
+import Chamado from "../Chamado/Chamado";
 import HomePC from "../../images/HomePC.png";
 
 export default function Plataforma() {
   return (
-    <div>
+    <Aba>
       <Secao1>
         <VisaoGeral />
         <RightSection>
@@ -13,9 +14,14 @@ export default function Plataforma() {
         </RightSection>
       </Secao1>
       <Funcionalidades /> 
-    </div>
+      <Chamado />
+    </Aba>
   );
 }
+
+const Aba = styled.div`
+    font-family: "Outfit";
+`
 
 const Secao1 = styled.div`
   display: flex;
@@ -24,6 +30,7 @@ const Secao1 = styled.div`
   gap: 20px;
   padding: 60px;
   flex-wrap: wrap; 
+  font-family: "Outfit";
 
   @media (max-width: 1024px) {
     gap: 15px; 
