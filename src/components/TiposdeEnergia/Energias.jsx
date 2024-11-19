@@ -1,10 +1,6 @@
-import styled from "styled-components"
-import eolica from "../../images/eolica.jpg"
-import hidreletrica from "../../images/hidreletrica.jpg"
-import solar from "../../images/solar.jpg"
-import biomassa from "../../images/biomassa.jpg"
-import geotermica from "../../images/geotermica.jpg"
-import mares from "../../images/mares.jpg"
+import React, { useState, useEffect } from "react";
+import styled from "styled-components";
+import CardEnergia from "../CardEnergia/CardEnergia";
 
 const Tipos = styled.section`
   display: grid;
@@ -88,54 +84,37 @@ const Subtitulo = styled.p`
   justify-content: center;
   font-size: 15px;
   margin: 0 0 30px 0;
-`
+`;
+
 const Secao1 = styled.div`
   margin: 0 20px 50px 20px;
-`
+`;
 
 export function TiposEnergeticos() {
+  const [fontesDeEnergia, setFontesDeEnergia] = useState([]);
+
+  useEffect(() => {
+    fetch("/energia.json")
+      .then((response) => response.json())
+      .then((data) => setFontesDeEnergia(data.fontesDeEnergia))
+      .catch((error) => console.error("Erro ao carregar o JSON:", error));
+  }, []);
+
   return (
     <Secao1 id="secao1">
       <Titulo>Tipos de Energia</Titulo>
-      <Subtitulo>(passe o mouse/dedo sobre a imagem)</Subtitulo>
+      <Subtitulo>(Passe o mouse/dedo sobre a imagem)</Subtitulo>
       <Tipos>
-          <Cards>
-              <Imagem>
-                  {/* IMAGEM AQUI */}
-              </Imagem>
-              <Descricao>Energia Eólica:</Descricao>
-          </Cards>
-          <Cards>
-              <Imagem img={hidreletrica}>
-                  {/* IMAGEM AQUI */}
-              </Imagem>
-              <Descricao>Energia Hidrelétrica::</Descricao>
-          </Cards>
-          <Cards>
-              <Imagem img={solar}>
-                  {/* IMAGEM AQUI */}
-              </Imagem>
-              <Descricao>Energia Solar:</Descricao>
-        </Cards>
-        <Cards>
-              <Imagem img={biomassa}>
-                  {/* IMAGEM AQUI */}
-              </Imagem>
-              <Descricao>Energia Biomassa:</Descricao>
-        </Cards>
-        <Cards>
-              <Imagem img={geotermica}>
-                  {/* IMAGEM AQUI */}
-              </Imagem>
-              <Descricao>Energia Geotérmica:</Descricao>
-        </Cards>
-        <Cards>
-              <Imagem img={mares}>
-                  {/* IMAGEM AQUI */}
-              </Imagem>
-              <Descricao>Energia das Marés:</Descricao>
-        </Cards>
+        {fontesDeEnergia.map((energia, index) => (
+          <CardEnergia
+            key={index}
+            tipo={energia.nome}
+            nome={energia.nome}
+            descricao={energia.descricao}
+            dadosRelevantes={energia.dadosRelevantes}  // Passando os dados relevantes
+          />
+        ))}
       </Tipos>
     </Secao1>
-  )
+  );
 }

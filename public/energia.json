@@ -1,0 +1,83 @@
+{
+    "fontesDeEnergia": [
+      {
+        "nome": "Energia Eólica",
+        "descricao": "Gerada a partir do vento usando turbinas.",
+        "impactoAmbiental": "Baixo impacto, mas pode afetar aves e a paisagem.",
+        "custo": "Médio, com altos custos iniciais e baixa manutenção.",
+        "acessibilidade": "Viável em áreas com ventos constantes.",
+        "imagem": "eolica.jpg",
+        "dadosRelevantes": {
+          "potencial": "5000 MW",
+          "localizacaoIdeal": "Regiões costeiras e planaltos.",
+          "emissaoCO2": "0 g/kWh"
+        }
+      },
+      {
+        "nome": "Energia Solar",
+        "descricao": "Obtida através da luz do sol utilizando painéis solares.",
+        "impactoAmbiental": "Quase nulo, mas a produção de painéis pode gerar resíduos.",
+        "custo": "Médio, com queda contínua no preço dos painéis.",
+        "acessibilidade": "Altamente viável em regiões ensolaradas.",
+        "imagem": "solar.jpg",
+        "dadosRelevantes": {
+          "potencial": "3000 MW",
+          "localizacaoIdeal": "Regiões tropicais e áridas.",
+          "emissaoCO2": "0 g/kWh"
+        }
+      },
+      {
+        "nome": "Energia Hidrelétrica",
+        "descricao": "Gera eletricidade a partir da força da água em movimento.",
+        "impactoAmbiental": "Pode causar impactos em ecossistemas aquáticos.",
+        "custo": "Baixo a médio, com custos iniciais elevados.",
+        "acessibilidade": "Dependente de rios e barragens.",
+        "imagem": "hidreletrica.jpg",
+        "dadosRelevantes": {
+          "potencial": "10000 MW",
+          "localizacaoIdeal": "Regiões com rios de grande porte.",
+          "emissaoCO2": "4 g/kWh (construção de barragens)"
+        }
+      },
+      {
+        "nome": "Energia Biomassa",
+        "descricao": "Obtida a partir da queima de resíduos orgânicos.",
+        "impactoAmbiental": "Moderado, pode emitir CO2 dependendo do método.",
+        "custo": "Baixo, devido ao uso de resíduos como matéria-prima.",
+        "acessibilidade": "Alta em regiões agrícolas.",
+        "imagem": "biomassa.jpg",
+        "dadosRelevantes": {
+          "potencial": "2000 MW",
+          "localizacaoIdeal": "Áreas rurais e industriais.",
+          "emissaoCO2": "15 g/kWh"
+        }
+      },
+      {
+        "nome": "Energia Geotérmica",
+        "descricao": "Obtida a partir do calor armazenado nas profundezas da Terra.",
+        "impactoAmbiental": "Baixo impacto, mas pode afetar o ecossistema local em áreas de perfuração.",
+        "custo": "Médio, com altos custos de instalação.",
+        "acessibilidade": "Viável em regiões com atividade geotérmica.",
+        "imagem": "geotermica.jpg",
+        "dadosRelevantes": {
+          "potencial": "5000 MW",
+          "localizacaoIdeal": "Regiões próximas a fontes geotérmicas (ex: Islândia, Japão).",
+          "emissaoCO2": "0 g/kWh"
+        }
+      },
+      {
+        "nome": "Energia das Marés",
+        "descricao": "Gera eletricidade a partir do movimento das marés e correntes oceânicas.",
+        "impactoAmbiental": "Baixo, mas pode afetar a fauna marinha local.",
+        "custo": "Alto, devido aos custos de infraestrutura para construção de barragens marinhas.",
+        "acessibilidade": "Viável em regiões costeiras com grande variação de maré.",
+        "imagem": "mares.jpg",
+        "dadosRelevantes": {
+          "potencial": "2000 MW",
+          "localizacaoIdeal": "Regiões costeiras com grandes variações de maré (ex: França, Reino Unido).",
+          "emissaoCO2": "0 g/kWh"
+        }
+      }
+    ]
+  }
+  
