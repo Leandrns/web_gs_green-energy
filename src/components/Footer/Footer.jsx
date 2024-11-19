@@ -4,7 +4,7 @@ export const Final = styled.footer`
     display: flex;
     flex-direction: column;
     position: relative;
-    background-color: #006414;
+    background-color: ${props => props.back || '#006414'};
     font-family: "Outfit";
     bottom: 0;
 `
@@ -49,7 +49,7 @@ export const Localizar = styled.a`
     transition: all 0.3s;
     width: fit-content;
     &:hover{
-        color: #5ccb5f;
+        color: ${props => props.levar || '#5ccb5f'};
         font-weight: bold;
     }
 `
@@ -86,7 +86,7 @@ export const Media = styled.a`
         color: #f5f5f5;
         font-size: 23px;
         &:hover{
-        color: #5ccb5f;
+            color: ${props => props.levar || '#5ccb5f'};
         }
     }
 `
