@@ -4,7 +4,7 @@ import rural from  "../../images/rural.png"
 import planet from "../../images/planet.png"
 
 const Secao3 = styled.section`
-    margin: 0 30px 30px 30px;
+    margin: 0 30px 50px 30px;
 `
 
 const Titulo = styled.h2`

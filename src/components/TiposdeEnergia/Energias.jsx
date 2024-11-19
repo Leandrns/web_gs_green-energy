@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import CardEnergia from "../CardEnergia/CardEnergia";
+import eolica from "../../images/eolica.jpg"
+import hidreletrica from "../../images/hidreletrica.jpg"
+import solar from "../../images/solar.jpg"
+import biomassa from "../../images/biomassa.jpg"
+import geotermica from "../../images/geotermica.jpg"
+import mares from "../../images/mares.jpg"
 
 const Tipos = styled.section`
   display: grid;
@@ -87,7 +93,7 @@ const Subtitulo = styled.p`
 `;
 
 const Secao1 = styled.div`
-  margin: 0 20px 50px 20px;
+  margin: 0 40px 50px 40px;
 `;
 
 export function TiposEnergeticos() {
