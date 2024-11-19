@@ -69,13 +69,18 @@ const Call = styled.span`
 
 
 export function HeroEnergy() {
+  const scrollToSection1 = () => {
+    const section1 = document.getElementById('secao1');
+    section1?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <Hero>
-        <Titulo>Transforme seu impacto no planeta com <span>energia renovável.</span></Titulo>
-        <Botao href=''>
-            <Call>Descubra!</Call>
-            <i class=" fa-regular fa-circle-down"></i>
-        </Botao>
+      <Titulo>Transforme seu impacto no planeta com <span>energia renovável.</span></Titulo>
+      <Botao onClick={scrollToSection1}>
+        <Call>Descubra!</Call>
+        <i className="fa-regular fa-circle-down"></i>
+      </Botao>
     </Hero>
-  )
+  );
 }

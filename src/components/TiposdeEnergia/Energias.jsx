@@ -4,6 +4,7 @@ import CardEnergia from "../CardEnergia/CardEnergia";
 
 const Tipos = styled.section`
   display: grid;
+  flex-wrap: wrap;
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
