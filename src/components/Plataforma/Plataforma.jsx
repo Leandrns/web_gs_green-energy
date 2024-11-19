@@ -31,6 +31,7 @@ const Secao1 = styled.div`
   padding: 60px;
   flex-wrap: wrap; 
   font-family: "Outfit";
+  background-color: #FFCD3C;
 
   @media (max-width: 1024px) {
     gap: 15px; 
