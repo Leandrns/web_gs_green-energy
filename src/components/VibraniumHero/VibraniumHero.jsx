@@ -9,7 +9,8 @@ const HeroContainer = styled.section`
   padding: 0 20px;
   gap: 30px;
   height: 50vh;
-  background-image: url(${fundoHero});
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url(${fundoHero});
   background-size: cover;
   background-position: center;
   color: white;
@@ -17,16 +18,20 @@ const HeroContainer = styled.section`
 
 const Titulo = styled.h1`
   font-size: 36px;
+  text-shadow: 0 0 16px black;
+  span {
+    color: #FFCD3C;
+  }
 `
 
 const Logo = styled.img`
   width: 120px;
 `
 
-export function Vibranium() {
+export default function VibraniumHero() {
   return (
     <HeroContainer>
-      <Titulo>VIBRANIUM: Gerando energia por vibração</Titulo>
+      <Titulo><span>VIBRANIUM</span>: Gerando <span>energia</span> por vibração</Titulo>
       <Logo src={logo}></Logo>
     </HeroContainer>
   )
