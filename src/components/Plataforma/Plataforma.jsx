@@ -2,7 +2,9 @@ import styled from "styled-components";
 import VisaoGeral from "../VisaoGeral/VisaoGeral";
 import Funcionalidades from "../Funcionalidades/Funcionalidades";
 import Chamado from "../Chamado/Chamado";
-import HomePC from "../../images/HomePC.png";
+import Dados from "../Infos/Infos";
+import ApresentaPlataforma from "../ApresentaPlataforma/ApresentaPlataforma";
+
 
 export default function Plataforma() {
   return (
@@ -10,10 +12,11 @@ export default function Plataforma() {
       <Secao1>
         <VisaoGeral />
         <RightSection>
-          <Image src={HomePC} alt="Imagem ilustrativa da plataforma" />
+          <ApresentaPlataforma />
         </RightSection>
       </Secao1>
       <Funcionalidades /> 
+      <Dados />
       <Chamado />
     </Aba>
   );
@@ -31,7 +34,7 @@ const Secao1 = styled.div`
   padding: 60px;
   flex-wrap: wrap; 
   font-family: "Outfit";
-  background-color: #FFCD3C;
+  background: linear-gradient(to bottom, #ac8100, #ffcd3c);
 
   @media (max-width: 1024px) {
     gap: 15px; 
@@ -60,24 +63,3 @@ const RightSection = styled.div`
     margin-top: 15px; 
   }
 `;
-
-const Image = styled.img`
-  max-width: 100%;
-  max-height: 50vh;
-  border-radius: 6px;
-  transition: transform 0.3s ease;
-  @media (max-width: 768px) {
-    max-height: 40vh;
-    
-  }
-
-  @media (max-width: 480px) {
-    max-height: 30vh; 
-  }
-
-  &:hover {
-    transform: scale(1.05);
-    
-  }
-`;
-

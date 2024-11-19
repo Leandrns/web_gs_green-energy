@@ -23,13 +23,16 @@ const Container = styled.div`
     justify-content: center;
     text-align: center;
 
-    padding: 1rem;
+    padding: 5rem;
+
+    @media(max-width: 768px){
+        padding: 2rem;
+    }
 `;
 
 const Frase = styled.div`
     font-size: 1.6rem;
     font-weight: bold;
-    color: #333;
     line-height: 1.4;
     margin-bottom: 1rem;
 
@@ -50,17 +53,24 @@ const Mensagem = styled.p`
 `;
 
 const Botao = styled.button`
-    background-color: #FFCD3C;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 0.8rem 1.5rem;
-    border: none;
-    border-radius: 5px;
+     background-image: linear-gradient(135deg, #ffcd3c 0%, #b8a817 100%);
+    box-shadow: 0 20px 30px -6px rgba(207, 175, 31, 0.671);
+    outline: none;
     cursor: pointer;
-    transition:transform 0.4s ease;
+    border: none;
+    font-size: 24px;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 
     &:hover {
-        transform: scale(1.05);
+        transform: translateY(3px);
+        box-shadow: none;
+    }
+
+    &:active{
+        opacity: 0.5;
     }
 `;

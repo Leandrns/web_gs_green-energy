@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBolt } from "@fortawesome/free-solid-svg-icons";
-import { faLightbulb } from "@fortawesome/free-solid-svg-icons/faLightbulb";
+import { faPlugCircleBolt } from "@fortawesome/free-solid-svg-icons";
 import { faChargingStation } from "@fortawesome/free-solid-svg-icons";
 
 export default function DescFuncionalidades() {
@@ -14,7 +14,7 @@ export default function DescFuncionalidades() {
           
         </ListItem>
         <ListItem>
-          <p><FontAwesomeIcon icon={faLightbulb} style={{color: "#FFCD3C", marginRight: 5, fontSize:20}}/>Acompanhe a economia de gastos com energia ao longo do tempo. Você pode <span>visualizar as reduções de custos</span> diárias, mensais e anuais.</p>
+          <p><FontAwesomeIcon icon={faPlugCircleBolt} style={{color: "#FFCD3C", marginRight: 5, fontSize:20}}/>Acompanhe a economia de gastos com energia ao longo do tempo. Você pode <span>visualizar as reduções de custos</span> diárias, mensais e anuais.</p>
           
         </ListItem>
         <ListItem>

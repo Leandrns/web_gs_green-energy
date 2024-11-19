@@ -21,7 +21,7 @@ const Container = styled.div`
   height: 30vh;
   max-width: 40vw;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
-  background: linear-gradient(to left, #f0f0f0, #ffce3c90);
+  background: linear-gradient(to bottom, #f0f0f0, #ffce3c90);
   border-radius: 20px;
   margin: 20px;
   transition: transform 0.3s ease;
@@ -29,7 +29,7 @@ const Container = styled.div`
   @media (max-width: 768px) {
     max-width: 80vw;
     height: auto;
-    padding: 30px;
+    padding: 20px;
   }
 
   &:hover {
@@ -46,7 +46,7 @@ const Textos = styled.div`
   
   @media (max-width: 768px) {
     align-items: center;
-    text-align: center;
+    text-align: start;
   }
 `;
 
@@ -56,6 +56,10 @@ const Title = styled.h2`
   
   @media (max-width: 768px) {
     font-size: 1.3rem; 
+  }
+
+  @media (max-width: 560px) {
+    font-size: 1rem; 
   }
 `;
 

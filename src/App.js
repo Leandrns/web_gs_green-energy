@@ -10,7 +10,7 @@ function App() {
     <Router>
       <div className="App">
         <Header />
-        <Vibranium />
+        {/* <Vibranium /> */}
         <Plataforma/>
         <Footer />
         
