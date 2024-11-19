@@ -70,19 +70,6 @@ const Descricao = styled.span`
     font-size: 1.2em;
   }
 `;
-const Dados = styled.li`
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2em;
-  opacity: 0; 
-  transition: opacity 0.3s ease-in-out;
-`;
 
 const Nome = styled.strong`
   font-size: 1.5em;
@@ -93,6 +80,7 @@ const Nome = styled.strong`
   left: 10px;
   z-index: 1;
   opacity: 0;
+  text-align: center;
   transition: opacity 0.3s ease; 
 `;
 
@@ -125,10 +113,12 @@ const CardEnergia = ({ tipo, nome, descricao, dadosRelevantes }) => {
     <Card>
       <Imagem img={imagem} />
       <Nome className="nome">{nome}</Nome>
-      <Descricao>{descricao}</Descricao>
-      <Dados className="dados">{dadosRelevantes}</Dados>
+      <Descricao>
+        {descricao}
+        <br />
+        Potencial: {dadosRelevantes.potencial}
+      </Descricao>
     </Card>
   );
 };
-
 export default CardEnergia;

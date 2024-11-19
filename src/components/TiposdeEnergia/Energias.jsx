@@ -44,10 +44,10 @@ export function TiposEnergeticos() {
         {fontesDeEnergia.map((energia, index) => (
           <CardEnergia
             key={index}
-            tipo={energia.nome}     
-            nome={energia.nome}     
-            descricao={energia.descricao} 
-            dados={energia.dadosRelevantes}
+            tipo={energia.nome}
+            nome={energia.nome}
+            descricao={energia.descricao}
+            dadosRelevantes={energia.dadosRelevantes}  // Passando os dados relevantes
           />
         ))}
       </Tipos>
