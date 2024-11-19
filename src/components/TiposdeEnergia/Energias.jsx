@@ -8,9 +8,16 @@ import mares from "../../images/mares.jpg"
 
 const Tipos = styled.section`
   display: grid;
+  flex-wrap: wrap;
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 50px;
+  @media screen and (max-width: 988px){
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (max-width: 660px){
+    grid-template-columns: 1fr;
+  }
 `
 
 const Cards = styled.div`
@@ -74,6 +81,7 @@ const Titulo = styled.h1`
   display: flex;
   justify-content: center;
   margin: 50px 0 0 0;
+  font-size: 36px;
 `
 const Subtitulo = styled.p`
   display: flex;
