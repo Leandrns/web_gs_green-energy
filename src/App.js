@@ -1,8 +1,8 @@
 import './App.css';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import { BrowserRouter as Router } from 'react-router-dom';
-import { Vibranium } from './components/VibraniumBI/Vibranium';
+import ContentContainer from './components/ContentContainer/ContentContainer';
 import { HeroEnergy } from './components/Hero_Energy/hero_section';
 import { TiposEnergeticos } from './components/TiposdeEnergia/Energias';
 import SplashScreen from './Splash';
@@ -15,10 +15,7 @@ function App() {
       <div className="App">
         <SplashScreen />
         <Header />
-        <HeroEnergy/>
-        <TiposEnergeticos/>
-        <Duplas />
-        <Pratica />
+        <ContentContainer />
         <Footer />
       </div>
     </Router>

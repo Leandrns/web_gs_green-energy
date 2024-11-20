@@ -62,7 +62,7 @@ export const Copyright = styled.div`
     background-color: #171717;
     font-size: 0.9rem;
     padding: 1rem;
-    width: 100%;
+    max-width: 100%;
     text-align: center;
 `
 
@@ -96,15 +96,18 @@ export default function Footer(){
     const location = useLocation()
     const corHover= {
         '/': '#5ccb5f',
-        '/vibranium': '#FFCD3C'
+        '/vibranium/inicio': '#FFCD3C',
+        '/vibranium/plataforma': '#FFCD3C'
     }
     const corFundo= {
         '/': '#006414',
-        '/vibranium': '#644900'
+        '/vibranium/inicio': '#644900',
+        '/vibranium/plataforma': '#644900'
     }
     const imagem= {
         '/': 'https://www.fiap.com.br/graduacao/global-solution/svg/header/green-energy.svg',
-        '/vibranium': logo
+        '/vibranium/inicio': logo,
+        '/vibranium/plataforma': logo
     }
     return(
         <Final fundo={corFundo[location.pathname]}>

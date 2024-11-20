@@ -17,14 +17,14 @@ const NavContainer = styled.nav`
     gap: 20px;
     .link {
         text-decoration: none;
-        color: black;
+        color: white;
         padding: 10px;
         position: relative;
         ::after {
             content: " ";
             width: 0%;
             height: 2px;
-            background-color: black;
+            background-color: white;
             position: absolute;
             bottom: 0;
             left: 0;
@@ -44,8 +44,9 @@ const OpcaoHeader = styled.a`
 export default function Header() {
     const location = useLocation()
     const coresPages = {
-        '/': '#5CCB5F',
-        '/vibranium': '#FFCD3C'
+        '/': '#006414',
+        '/vibranium/inicio': '#FFCD3C',
+        '/vibranium/plataforma': '#FFCD3C'
     }
 
     return (
@@ -54,7 +55,7 @@ export default function Header() {
                 <Link to="/" className="link">
                     <OpcaoHeader>Green Energy</OpcaoHeader>
                 </Link>
-                <Link to="/vibranium" className="link">
+                <Link to="/vibranium/inicio" className="link">
                     <OpcaoHeader>Projeto VIBRANIUM</OpcaoHeader>
                 </Link>
             </NavContainer>
