@@ -45,7 +45,6 @@ export default function Header() {
     const location = useLocation()
     const coresPages = {
         '/': '#006414',
-        '/vibranium': '#FFCD3C',
         '/vibranium/inicio': '#FFCD3C',
         '/vibranium/plataforma': '#FFCD3C'
     }
@@ -56,7 +55,7 @@ export default function Header() {
                 <Link to="/" className="link">
                     <OpcaoHeader>Green Energy</OpcaoHeader>
                 </Link>
-                <Link to="/vibranium" className="link">
+                <Link to="/vibranium/inicio" className="link">
                     <OpcaoHeader>Projeto VIBRANIUM</OpcaoHeader>
                 </Link>
             </NavContainer>
