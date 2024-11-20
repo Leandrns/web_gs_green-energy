@@ -142,7 +142,7 @@ const ConteudoExibido = styled.div`
     align-items: center;
     gap: 20px;
     max-width: 1000px;
-    margin-top: 20px;
+    margin: 30px 0;
 
     @media (max-width: 768px) {
         flex-direction: column;
