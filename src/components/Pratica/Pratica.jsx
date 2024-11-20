@@ -90,7 +90,7 @@ const Subtitulo = styled.p`
 
 const Botoes = styled.div`
     display: flex;
-    gap: 20px;
+    gap: 60px;
     justify-content: center;
   
     @media (max-width: 768px) {
@@ -103,16 +103,26 @@ const Botao = styled.button`
     background-color: #009929;
     display: flex;
     justify-content: center;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 15px 30px;
-    font-size: 1.2rem;
+    padding: 17px 40px;
+    border-radius: 10px;
+    border: 0;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: rgb(46, 201, 46) 0px 10px 0px 0px;
+    color: hsl(0, 0%, 100%);
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
   
     &:hover {
+        box-shadow: rgb(46, 201, 46) 0px 7px 0px 0px;
+    }
+
+    &:active{
         background-color: #006414;
+        box-shadow: rgb(46, 201, 46) 0px 0px 0px 0px;
+        transform: translateY(5px);
+        transition: 200ms;
     }
   
     @media (max-width: 768px) {
