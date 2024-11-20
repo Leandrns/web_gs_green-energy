@@ -7,6 +7,7 @@ const NavContainer = styled.div`
     align-items: center;
     gap: 20px;
     height: 70px;
+    background-color: #c99300;
 `
 
 const Button = styled.button`
@@ -23,7 +24,7 @@ const Button = styled.button`
     }
 
     &:hover {
-        background-color: white;
+        background-color: #ffe598;
         transform: translate3d(-3px, -3px, -3px);
     }
 `

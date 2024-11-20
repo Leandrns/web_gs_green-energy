@@ -38,7 +38,9 @@ const Secao2 = styled.div`
 const Title = styled.h2`
   font-size: 1.8rem;
   margin-bottom: 10px;
+  margin-top: 10px;
   font-family: "Outfit";
+  text-align: center;
 
   @media (max-width: 768px) {
     font-size: 1.3rem;

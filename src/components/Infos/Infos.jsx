@@ -7,10 +7,12 @@ export default function Dados(){
             <Textos>
                 <Texto>
                     <h2>Segurança</h2>
+                    <div className="linha"></div>
                     <p>Com tecnologia avançada e criptografia de ponta, nossa plataforma garante o funcionamento contínuo e seguro dos sensores, protegendo dados em tempo real para oferecer máxima confiabilidade e desempenho operacional.</p>
                 </Texto>
                 <Texto>
                     <h2>Suporte</h2>
+                    <div className="linha"></div>
                     <p>Nosso suporte especializado oferece assistência completa para garantir os sensores necessários e sua instalação eficiente, assegurando integração perfeita e funcionamento ideal para atender às suas necessidades.</p>
                 </Texto>
             </Textos>
@@ -63,11 +65,20 @@ const Texto = styled.div`
     h2 {
         font-size: 1.7rem;
         margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .linha{
+        height:2px;
+        margin: 5px;
+        
+        background-color:black;
+
     }
 
     p {
         font-size: 1.2rem;
-        line-height: 1.5;
+        line-height: 1.2;
         text-align: justify;
     }
 
