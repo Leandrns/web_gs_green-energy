@@ -132,7 +132,7 @@ const Imagem = styled.aside`
     @media screen and (min-width: 1240px){
         width: 80%;
         &::before {
-        left: -10px;
+        left: -8px;
         }
     }
 `
