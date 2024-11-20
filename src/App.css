@@ -1,6 +1,12 @@
-.App {
-    font-family: "Outfit";
-    text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit';
+}
+
+html{
     background-color: #e8e8e8;
+    overflow-x: hidden;
 }
 

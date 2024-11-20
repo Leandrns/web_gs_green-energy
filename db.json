@@ -1,0 +1,11 @@
+{
+    "energies": [
+      { "id": 1, "type": "Eólica", "description": "Energia gerada pelo vento." },
+      { "id": 2, "type": "Hidrelétrica", "description": "Energia gerada pela força da água." },
+      { "id": 3, "type": "Geotérmica", "description": "Energia proveniente do calor da Terra." },
+      { "id": 4, "type": "Biomassa", "description": "Energia gerada por meio da queima de matéria orgânica." },
+      { "id": 5, "type": "Marés", "description": "Energia gerada pelas variações nas marés dos oceanos." },
+      { "id": 6, "type": "Solar", "description": "Energia obtida pela luz do sol." }
+    ]
+  }
+  
