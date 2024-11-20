@@ -18,7 +18,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   padding: 20px;
-  height: 30vh;
+
   max-width: 40vw;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
   background: linear-gradient(to bottom, #f0f0f0, #ffce3c90);
@@ -51,7 +51,7 @@ const Textos = styled.div`
 `;
 
 const Title = styled.h2`
-  font-size: 1.8rem;
+  text-align: start;
   margin: 0;
   
   @media (max-width: 768px) {
@@ -65,7 +65,6 @@ const Title = styled.h2`
 
 const Text = styled.p`
   font-size: 1rem;
-  margin-top: 10px;
   
   @media (max-width: 768px) {
     font-size: 0.9rem; 
