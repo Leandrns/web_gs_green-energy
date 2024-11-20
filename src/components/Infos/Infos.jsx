@@ -47,12 +47,11 @@ const Secao3 = styled.section`
 const Textos = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 20px;
 
     @media (min-width: 768px) {
         flex-direction: row;
         justify-content: center;
-        gap: 40px;
+        gap: 100px;
     }
 
 `;
@@ -62,16 +61,19 @@ const Texto = styled.div`
     max-width: 300px;
 
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         margin-bottom: 10px;
     }
 
     p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         line-height: 1.5;
+        text-align: justify;
     }
 
-    @media (min-width: 768px) {
-        text-align: left;
+    @media (max-width: 768px) {
+        p{
+        font-size: 1rem;
+        }
     }
 `;

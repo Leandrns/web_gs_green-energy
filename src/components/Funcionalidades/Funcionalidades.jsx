@@ -5,7 +5,7 @@ import DescFuncionalidades from "../DescFuncionalidades/DescFuncionalidades";
 export default function Funcionalidades() {
   return (
     <div>
-    <Title>Segurança e Desempenho</Title>
+    <Title>Confiabilidade no Desempenho</Title>
     <Secao2>
       <Image src={Dados} alt="Imagem ilustrativa da funcionalidade" />
       <DescFuncionalidades />
