@@ -47,9 +47,13 @@ const Texto = styled.p`
 const Imagem = styled.img`
     width: 40%;
     filter: drop-shadow(5px 12px 8px rgba(255, 166, 0, 0.8));
+    transition: 0.3s ease-in-out;
     @media screen and (max-width: 620px){
         width: 90%;
         margin: 20px 0;
+    }
+    &:hover {
+        scale: 1.06;
     }
 `
 

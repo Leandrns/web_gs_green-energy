@@ -17,6 +17,12 @@ const IconTextContainer = styled.div`
     gap: 15px;
     i {
         font-size: 3rem;
+        transition: 0.3s ease-in-out;
+    }
+
+    &:hover i {
+        transform: rotateZ(-20deg);
+        color: #a16900;
     }
 `
 
