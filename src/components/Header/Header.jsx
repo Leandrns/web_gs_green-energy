@@ -45,7 +45,9 @@ export default function Header() {
     const location = useLocation()
     const coresPages = {
         '/': '#006414',
-        '/vibranium': '#FFCD3C'
+        '/vibranium': '#FFCD3C',
+        '/vibranium/inicio': '#FFCD3C',
+        '/vibranium/plataforma': '#FFCD3C'
     }
 
     return (
