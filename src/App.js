@@ -16,11 +16,6 @@ function App() {
         <SplashScreen />
         <Header />
         <ContentContainer />
-        <Footer /> 
-        <HeroEnergy/>
-        <TiposEnergeticos/>
-        <Duplas />
-        <Pratica />
         <Footer />
       </div>
     </Router>
