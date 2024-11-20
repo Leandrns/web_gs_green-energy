@@ -10,7 +10,7 @@ export default function Pratica() {
         setIsVisible(false);
         setTimeout(() => {
             setConteudo("O Brasil é um dos líderes em energia renovável, com grande foco em hidroeletricidade e biocombustíveis. O país tem investido em diversas fontes de energia limpa, com destaque para os parques solares no Nordeste e o uso do etanol. Com isso, o Brasil se destaca na matriz energética global, buscando cada vez mais soluções sustentáveis para atender à crescente demanda de energia.");
-            setImagem("https://th.bing.com/th/id/OIP.EEOnAa9LF50FoB_ui4IZbAHaFL?rs=1&pid=ImgDetMain"); 
+            setImagem("https://static.wixstatic.com/media/8c703f_11dc80702ccb45aeb011e9efe838dd3d~mv2.png/v1/fill/w_740,h_739,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8c703f_11dc80702ccb45aeb011e9efe838dd3d~mv2.png"); 
             setIsVisible(true); 
         }, 500); 
     };
@@ -139,11 +139,11 @@ const ConteudoExibido = styled.div`
 
 const Imagem = styled.img`
     width: 40vw;
-    height: 400px;
+    height: 80vh;
     object-fit: cover;
     border-radius: 10px;
     max-width: 100%;  
-    max-height: 300px;
+    
 
     @media (max-width: 768px) {
         width: 100%;  
