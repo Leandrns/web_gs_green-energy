@@ -18,9 +18,9 @@ const Spinner = styled.div`
     }
 `
 const Spinner1 = styled.div`
-    background-color: rgb(36, 36, 36);
-    width: 100px;
-    height: 100px;
+    background-color: rgb(36,36,36);
+    width: 50px;
+    height: 50px;
     border-radius: 50px;
     filter: blur(10px);
 `
@@ -36,13 +36,14 @@ const Splash = styled.div`
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: #4CAF50; /* Cor de fundo da splash screen */
+  background-color: #222222; /* Cor de fundo da splash screen */
   color: white;
   font-size: 1.5rem;
   animation: fadeInOut 3s ease;
+  z-index: 3;
 
 @keyframes fadeInOut {
-  0% { opacity: 0; }
+  0% { opacity: 1; }
   50% { opacity: 1; }
   100% { opacity: 0; }
 }
