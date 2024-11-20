@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom"
+import { useLocation, Link } from "react-router-dom"
 import styled from "styled-components"
 import logo from "../../images/logo_footer.svg"
 
@@ -115,9 +115,9 @@ export default function Footer(){
                 <Logo src={imagem[location.pathname]} />
                 <Caminhos>
                     <Titulo>Para onde você quer ir?</Titulo>
-                    <Localizar hover={corHover[location.pathname]} href="#hero">Início</Localizar>
-                    <Localizar hover={corHover[location.pathname]} href="#tipoEnergia">Tipos de Energia</Localizar>
-                    <Localizar hover={corHover[location.pathname]} href="#title_beneficios_desafios">Benefícios e Desafios</Localizar>
+                    <Localizar hover={corHover[location.pathname]} href="/">Green Energy</Localizar>
+                    <Localizar hover={corHover[location.pathname]} href="/vibranium/inicio">Vibranium</Localizar>
+                    <Localizar hover={corHover[location.pathname]} href="/vibranium/plataforma">Vibranium BI</Localizar>
                 </Caminhos>
             </Inicio>
             <Social>
