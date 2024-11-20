@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { useState } from "react";
+import brasil from "../../images/grafico.png"
+import g20 from "../../images/g20.png"
 
 export default function Pratica() {
     const [conteudo, setConteudo] = useState(""); 
@@ -10,7 +12,7 @@ export default function Pratica() {
         setIsVisible(false);
         setTimeout(() => {
             setConteudo("O Brasil é um dos líderes em energia renovável, com grande foco em hidroeletricidade e biocombustíveis. O país tem investido em diversas fontes de energia limpa, com destaque para os parques solares no Nordeste e o uso do etanol. Com isso, o Brasil se destaca na matriz energética global, buscando cada vez mais soluções sustentáveis para atender à crescente demanda de energia.");
-            setImagem("https://static.wixstatic.com/media/8c703f_11dc80702ccb45aeb011e9efe838dd3d~mv2.png/v1/fill/w_740,h_739,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/8c703f_11dc80702ccb45aeb011e9efe838dd3d~mv2.png"); 
+            setImagem(brasil); 
             setIsVisible(true); 
         }, 500); 
     };
@@ -19,7 +21,7 @@ export default function Pratica() {
         setIsVisible(false);
         setTimeout(() => {
             setConteudo("O mundo está em transição para fontes de energia mais limpas e sustentáveis. A energia solar e eólica se destacam como alternativas à energia fóssil, com países como Alemanha e China investindo em parques solares e turbinas eólicas. A energia hidrelétrica segue sendo fundamental em muitas nações, enquanto a biomassa e os biocombustíveis ganham destaque na redução das emissões de carbono. O combate às mudanças climáticas está no centro das ações globais, com governos acelerando a adoção de energias renováveis para promover um planeta mais verde e equilibrado.");
-            setImagem("https://1.bp.blogspot.com/-kaL8tThOvKs/YLznQei9AJI/AAAAAAAAIrc/CK-hIi-KlGcoDXmpcyahFEkmqlOTbXm7wCLcBGAsYHQ/s320/potential-energy-kinetic-energy-differences-explained-light-image.jpg"); 
+            setImagem(g20); 
             setIsVisible(true);
         }, 500); 
     };
@@ -64,12 +66,13 @@ const Descricao = styled.p`
 `;
 
 const Titulo = styled.h1`
-    font-size: 2rem;
+    font-size: 36px;
     text-align: center;
     margin: 20px 0;
+    padding: 0 14px;
   
     @media (max-width: 768px) {
-        font-size: 1.5rem;
+        font-size: 36px;
         margin: 15px 0;
     }
 `;
@@ -77,14 +80,14 @@ const Titulo = styled.h1`
 const Subtitulo = styled.p`
     display: flex;
     justify-content: center;
-    font-size: 1.5rem;
-    margin: 0 0 30px 0;
+    font-size: 30px;
+    margin: 30px 0 10px 0;
     text-align: center;
     font-weight: bold;
   
     @media (max-width: 768px) {
-        font-size: 1rem;
-        margin: 0 0 20px 0;
+        font-size: 25px;
+        margin: 20px 0 10px 0;
     }
 `;
 
@@ -95,7 +98,7 @@ const Botoes = styled.div`
   
     @media (max-width: 768px) {
         flex-direction: column;
-        gap: 10px;
+        gap: 30px;
     }
 `;
 
@@ -139,7 +142,7 @@ const ConteudoExibido = styled.div`
     align-items: center;
     gap: 20px;
     max-width: 1000px;
-    margin-top: 20px;
+    margin: 30px 0;
 
     @media (max-width: 768px) {
         flex-direction: column;
@@ -148,8 +151,8 @@ const ConteudoExibido = styled.div`
 `;
 
 const Imagem = styled.img`
-    width: 40vw;
-    height: 80vh;
+    width: 60%;
+    height: 80%;
     object-fit: cover;
     border-radius: 10px;
     max-width: 100%;  
@@ -162,7 +165,7 @@ const Imagem = styled.img`
 `;
 
 const Texto = styled.p`
-    font-size: 1.2rem;
+    font-size: 24px;
     text-align: justify;
     width: 40vw;
     opacity: 0;
@@ -173,7 +176,7 @@ const Texto = styled.p`
     }
 
     @media (max-width: 768px) {
-        font-size: 1rem;
+        font-size: 20px;
         width: 80vw;
     }
 `;
