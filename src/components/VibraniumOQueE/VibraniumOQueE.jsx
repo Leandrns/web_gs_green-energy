@@ -18,6 +18,7 @@ export const SectionContainer = styled.section`
 export const Titulo = styled.h2`
     font-size: 30px;
     text-align: center;
+    margin-top: 20px;
 `   
 
 const ImgTextContainer = styled.div`

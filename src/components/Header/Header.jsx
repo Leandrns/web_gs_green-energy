@@ -9,13 +9,17 @@ const HeaderContainer = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 `
 
 const NavContainer = styled.nav`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    width: 100%;
+    gap: 20px;
     .link {
         text-decoration: none;
         color: white;
@@ -43,16 +47,26 @@ const OpcaoHeader = styled.a`
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    width: ${(props) => props.largura || '150px;'};
+    padding: 8px 16px;
+    width: max-content;
     height: 60px;
     background-color: ${(props) => props.selecColor || 'defaultColor'};
     box-shadow: ${(props) => props.boxShadow || 'none'};
     img.green{
-        width: 130px;
+        width: 10vw;
     }
     img.vibra{
-        width: 245px;
+        width: 15vw;
         padding-top: 6px;
+    }
+
+    @media screen and (max-width:650px){
+        img.green{
+            width: 20vw;
+        }
+        img.vibra{
+            width: 25vw;
+        }
     }
 `
 
@@ -75,7 +89,7 @@ export default function Header() {
             boxShadow: 'rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset'
         },
         '/vibranium/plataforma':{
-            backgroundColor: '#644900',
+            backgroundColor: '#cf8d00',
             boxShadow: 'rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset'
         }
     }
