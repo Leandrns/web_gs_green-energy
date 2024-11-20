@@ -53,10 +53,10 @@ const OpcaoHeader = styled.a`
     background-color: ${(props) => props.selecColor || 'defaultColor'};
     box-shadow: ${(props) => props.boxShadow || 'none'};
     img.green{
-        width: 10vw;
+        width: 130px;
     }
     img.vibra{
-        width: 15vw;
+        width: 225px;
         padding-top: 6px;
     }
 

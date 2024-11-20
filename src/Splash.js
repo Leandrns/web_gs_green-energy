@@ -3,14 +3,17 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
 const Spinner = styled.div`
-    background-image: linear-gradient(rgb(186, 66, 255) 35%,rgb(0, 225, 255));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(0, 207, 45) 5%,rgb(255, 205, 60));
     width: 100px;
     height: 100px;
     animation: spinning82341 1.7s linear infinite;
     text-align: center;
     border-radius: 50px;
     filter: blur(1px);
-    box-shadow: 0px -5px 20px 0px rgb(186, 66, 255), 0px 5px 20px 0px rgb(0, 225, 255);
+    box-shadow: 0px -5px 20px 0px rgb(255, 205, 60), 0px 5px 20px 0px rgb(0, 207, 45);
     @keyframes spinning82341 {
         to {
             transform: rotate(360deg);
@@ -19,14 +22,13 @@ const Spinner = styled.div`
 `
 const Spinner1 = styled.div`
     background-color: rgb(36, 36, 36);
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     border-radius: 50px;
     filter: blur(10px);
 `
 
 const Splash = styled.div`
-    /* SplashScreen.css */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,13 +38,14 @@ const Splash = styled.div`
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: #4CAF50; /* Cor de fundo da splash screen */
+  background-color: #e8e8e8;
   color: white;
   font-size: 1.5rem;
   animation: fadeInOut 3s ease;
+  z-index: 3;
 
 @keyframes fadeInOut {
-  0% { opacity: 0; }
+  0% { opacity: 1; }
   50% { opacity: 1; }
   100% { opacity: 0; }
 }
