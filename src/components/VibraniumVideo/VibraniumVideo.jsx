@@ -3,6 +3,9 @@ import React from 'react';
 
 const Video = styled.section`
     padding: 90px 50px 0 50px;
+    @media screen and (max-width: 655px){
+        padding: 60px 50px 30px 50px;
+    }
 `
 
 const VideoContainer = styled.div`
@@ -12,8 +15,8 @@ const VideoContainer = styled.div`
     aspect-ratio: 16 / 9;
     overflow: hidden;
     border-radius: 8px;
+    transition: all 0.4s ease-in-out;
     &:hover{
-            transition: all 0.4s ease-in-out;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
         }
 
@@ -23,6 +26,7 @@ const VideoContainer = styled.div`
         border: none;
         
     }
+    
 `;
 
 
